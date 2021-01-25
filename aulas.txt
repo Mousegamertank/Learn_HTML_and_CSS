@@ -1,0 +1,129 @@
+/*AULA 2*/
+
+para se criar um arquivo de HTML, ao nomear no final se coloca '.html', assim é indicado que é um HTML, o nome do arquivo HTML, não deve conter espaço, acentos ,serifas; 
+para ficar mais facil voce pode instalar  um lpugin que se chama HTML preview, com o crtl(command) + shift + P, ira abrir uma caixa acima, logo apos voce abre o preview com HTML: open preview, abrindo todas as alterações feitas irão ser mostradas, incluindo a diferença de tag
+
+/* AULA 3 */
+Hypertext Markup Language 
+(linguagem de marcação de Hipertexto);
+
+HTML Não é linguagem de programação, porém ela tem semantica/sintaxe, com o hipertexto (links), se usa elementos 
+
+/* AULA 4 */
+comentarios em HTML são linhas que o browser ignora, em HTML tal é feito com <!--Comentário aqui-- 
+
+/* AULA 5 */
+marcação do HTML: 
+caso seja uma tag especifica alguns idles(formatadores para programação instantaneamente fecham ou te dão a opção de usar a tag), no caso do Visual Studio Code, ao se colocar h1 e apertar enter se cria uma tag HTML de titulo, caso seja na mão voce utiliza para abrir uma tag '<' e '>' com a tag desejada dentro, exemplo:
+	<h1> abriu
+		elementos internos(escrita)
+	</h1> fechou
+a tag h1 tem fechamento e esse segundo h1 com / fecha ela;
+porém exitem tags sem fechamento como é o caso da tag <img src="" alt="">, que é usada para adicionar imagens, o atributo src="" é usado para adicionar a imagem apartir de uma biblioteca já o alt, caso o atributo não consiga ser exibido será o texto apresentado no lugar da imagem;
+
+/* AULA 6 */
+
+atributos são informações extras ou configurações de uma tag, por exemplo a tag <img src="" alt=""> que possui o atributo src e alt;
+existem tambem atributos booleanos que não precisam de conteudo como a tag <input type="text" disable>, na qual o atributo type cria o estilo da caixa a se usar no caso text de texto, enquanto o atributo disable bloqueia o usuario de digitar nesta caixa, o disable não precisa de ="";
+aspas, no caso da tag <a href="" title="" target="">texto aqui</a>, o atributo title='da um nome a tag', o target='indica onde sera aberto caso blank em outra pagina', e o href='é a linkagem da url', exemplo:
+<a href="https://google.com"> Google </a> a linkagem será direto no google;
+usem aspas duplas;
+
+/* AULA 7 */
+Atributos Globais podem ser encaixados em todas as tags HTML, exemplo
+<div class='carrinho'>
+</div>
+a class é utilizada para se acessar no Js e ainda para definir o que é cada coisa;
+
+contenteditable='true', voce pode editar este elemento no navegador quando se está true, 
+
+já no atributo data- (pode-se colocar qualquer nome após o traço, sem espaço), utilizado no JS e CSS
+
+hidden esconde uma tag, e o ID pode-se usar apenas um nome por tag ele deve ser especifico enquanto o class pode se agrupar varias tags;
+
+style aplica estilização no html, a estilização é feita em CSS;
+
+tabeindex='(usar valor interno com numeros)', ela atribui dentro da sua pagina caso voce aperte tab, a capacidade de pular para area especifica, já no 1 ou 2 ai você diferencia;
+
+title='definir o titulo', não muda a aparencia mas se você descansar o mouse ele vai aparecer o titulo;
+no 'develop.mozilla.org' voce pode pesquisar os atributos goblais, e são muitos;
+
+/* AULA 8 */
+
+aninhamento de tags, logo a tag <p> {paragrafo}, pode receber dentro dela uma outra tag como italico assim como o exemplo mostra:
+
+<p> 
+	teste1 <em> funciona </em> teste2 
+</p>
+
+e as tags seguem uma hierarquia, como o <em> é uma tag filha da tag <p> que tambem pode ser uma tag filha da <div> e assim vai, mas por que isso? simplesmente que uma alteração dentro da div vai alterar tanto o em quanto a cor, já a <em> não altera a tag <p>;
+
+falando de fluxo agora, se voce mostrar duas tags <p> uma abaixo da outra, ambas irão aparecer na ordem que você as colocou porém o espaçamento entre elas será maio pois há o distanciamento entre tags, se você der uma quebra de linha paradão logo a forma que será apresentado será linear, para ilustrar melhor acompanhe o exemplo:
+
+<p> 
+	josé 
+	cruzou a rua 
+<p>
+--------
+ira aparecer da seguinte forma:
+	josé cruzou a rua
+
+tudo linear, porém quando se ocorre um anianhamento pode ou não ocorrer a quebra de linha depende da tag, exemplo:
+
+<p>
+	josé <p> cruzou a rua </p> 
+</p>
+--------
+o display será 
+	josé
+
+	cruzou a rua
+
+pois a tag <p> quebra a linha, porém a forma correta para se dar uma quebra de linha e não iniciar um paragrafo é com a tag <br/>, no local da quebra de linha pois o espaçamento é menor e segue a linearidade do texto, exemplo:
+
+<p>
+	pedro <br/> comeu maça
+</p>
+---------
+o display será 
+
+	pedro 
+	comeu maça
+
+Contudo há elementos como o <em> o <a> que se usado não terá essa quebra e o texto continuara linear
+
+/* AULA 9 */
+<!--prática
+ESCREVER 2 PARAGRAFOS, UM USANDO A TAG <em> PARA DAR ENFASE E <strong> PARA IMPORTANCIA, COM UM LINK DE SAIBA MAIS, NÃO IMPORTA O ENCAMINHAMENTO DO LINK
+-->
+exemplo:
+
+<p>
+   <em>Lorem ipsum dolor,</em> sit amet consectetur adipisicing elit. 
+   Nostrum accusantium iusto a voluptas quod dolores hic magnam fugiat modi! <br>
+   <strong>Consequuntur dolore quaerat dolorem debitis impedit itaque, 
+   </strong>consequatur saepe quasi at?
+</p>
+
+<p>
+    <strong>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    Nostrum accusantium iusto a voluptas quod dolores hic magnam fugiat modi! </strong> <br>
+    Consequuntur dolore quaerat dolorem debitis impedit itaque, 
+    consequatur saepe quasi at?
+ </p>
+
+ <a href="https://www.google.com.br" > SAIBA MAIS </a>
+
+/* AULA 10 */
+
+<p>
+	&nbsp; (da um espaçamento )
+	os espaços 
+
+	que colocamos
+
+	além das quebras de linhas são ignorados
+
+</p>
+
