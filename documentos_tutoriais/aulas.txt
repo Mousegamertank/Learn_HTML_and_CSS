@@ -127,3 +127,40 @@ exemplo:
 
 </p>
 
+os caracteres reservados não são usados na propria escrita caso você tente utilizar o < dentro de um <p> pode ser que de algum erro, para isso utilizamos uma biblioteca com o & para chamar o caracter desejado no documento tags ta tudo certinho; 
+
+/* AULA 11 */
+Documento HTML:
+
+para começar o documento se inicia com 
+
+<!DOCTYPE html>
+
+usado pelos navegadores identificar que é HTML 5;
+
+logo apos usaremos o html (explicado na seção TAGS do documento tags)
+e dentro do html o head e o body, como no exemplo:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+para colocar um titulo na pagina dentro do head se usa a tag <title> (documento Tag) 
+com o meta charset ="utf-8"
+dentro do body utilizaremos tags como div, h1, p, para mostrar ao usuario o que se fazer;
+
+caso você esteja no visual Studio Code, basta colocar o ! e clicar enter que ele te da a anatomia pronta, mas no começo é melhor praticar;
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+este comando acima configura o html para todo o tipo de dispositivo, independente se é grande, ou pequeno a pág vai ser responsiva para tal
+
+/* AULA 11 */ 
+
+inciar uma nova pasta com o nome do projeto, e assim você pode usar o vscode para abrir sua pasta, assim vc trabalha diretamente com as pastas e assim fica mais facil de organizar tudo, e até melhor a visualisação

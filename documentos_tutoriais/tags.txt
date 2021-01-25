@@ -1,0 +1,60 @@
+<!--TAGS-->
+<div id ="TAGS">
+	<h1></h1> {Titulo}
+	
+	<img src="" alt=""> {imagens}
+	
+	<input type=""> {caixas de interação}
+	
+	<a href="" title="" target=""> texto </a> {tag para links}
+	
+	<div></div> {usada para criar blocos de conteudo}
+	
+	<p></p> {tag para paragrafo}
+
+	<!DOCTYPE html> {usado apenas para indicar ao navegador que é HTML 5}
+
+	<html lang=""></html> {usada para indicar qual codigo html vai ser mostrado, o atributo lang define a lingua padão do site}
+
+	<head></head> {usado como elemento dentro do html junto com o <body> que serve para configurações importantes para a pagina porém sem que o usuario veja}
+
+	<body></body> {corpo do documento assim como o head, serve para a construção da página em si}
+
+	<title> <title> {quando usado no head como tag, defina o nome da pagina}
+
+	<meta charset="utf-8"> {meta são metadados que serão usados na página, a tag é utlizada no head ,o atributo charset define o tipo de teclado disponivel para digitação no caso UTF-8 aceita até 'ç'}
+</div>
+----------------------------------------------------
+<!--ATRIBUTOS GLOBAIS-->
+<div id="ATRIBUTOS GLOBAIS">
+	class, 
+	contenteditable,
+	data-*,
+	hidden,
+	id,
+	style,
+	tabindex	,
+	title,
+</div>
+-----------------------------------------------------
+<!--FORMATAÇÃO DE PARAGRÁFO-->
+<div id = "FORMATAÇÃO DE PARAGRÁFO">
+	<em> italico </em>
+
+	quebra <br/>
+	linha
+
+	<strong> fica tudo negrito <strong>
+</div> 
+-----------------------------------------------------
+<!--CARACTERES RESERVADOS->
+<div id = "CARACTERES_RESERVADOS">
+	&nbsp; {da espaçamento devido no inicio do paragrafo}
+
+	&lt; {<}
+	&gt; {>}
+	&amp; {&}
+	&quote; {"}
+	&apos; {'}
+
+</div>
