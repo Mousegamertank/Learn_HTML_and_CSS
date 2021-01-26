@@ -23,6 +23,38 @@
 	<title> <title> {quando usado no head como tag, defina o nome da pagina}
 
 	<meta charset="utf-8"> {meta são metadados que serão usados na página, a tag é utlizada no head ,o atributo charset define o tipo de teclado disponivel para digitação no caso UTF-8 aceita até 'ç'}
+
+	<h1></h1> {texto de maior importancia}
+	
+	<h2></h2> {texto com a segunda maior importancia}
+
+	{tags <h1> até <h6> são tags para dar importancia ao texto}
+
+	<li></li> {item de uma lista}
+
+	<ol></ol> {lista ordenada}
+
+	<blockquote cite="aqui vem sua citação"> <p> Aqui o texto a ser citado dentro de um p </p></blockquote>
+
+	<cite> Quem citou ou citação aqui </cite>
+
+	<q cite="citação ou link da citação aqui"> o que foi falado na citação </q>
+
+	<abbr title="A extensão aqui"> Texto abreviado aqui </abbr>
+
+	<address> Endereço de quem fez o HTML </address>
+
+	<dl> cria uma lsita que pode ter descrição </dl>
+
+	<dt> termo da dl que serve como o termo principal </dt>
+
+	<dd> termo da dl que serve com desrcição da dt </dd>
+
+	<pre> Bloco grande de conteudo de codigo </pre>
+
+	<code> Bloco pequeno de conteudo de codigo </code>
+
+	<span> Agrupar Linhas </span>
 </div>
 ----------------------------------------------------
 <!--ATRIBUTOS GLOBAIS-->
@@ -45,6 +77,8 @@
 	linha
 
 	<strong> fica tudo negrito <strong>
+
+	<code> Fica tudo amarelo </code>
 </div> 
 -----------------------------------------------------
 <!--CARACTERES RESERVADOS->

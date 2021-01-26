@@ -164,3 +164,146 @@ este comando acima configura o html para todo o tipo de dispositivo, independent
 /* AULA 11 */ 
 
 inciar uma nova pasta com o nome do projeto, e assim você pode usar o vscode para abrir sua pasta, assim vc trabalha diretamente com as pastas e assim fica mais facil de organizar tudo, e até melhor a visualisação
+
+/* AULA 12 */ 
+
+semantica do HTML, que se usa para dar significado e tais elementos é fixado e indexado de forma mais semantica nas paginas do google, leitores de tela para quem necessita, e quais são os elementos semanticos para tal leitura sendo elas mais de 100
+
+/* AULA 13 */
+Cabeçalho e paragrafo, se for um texto mais bagunçado não vai ser util e pode levar ao desinteresse do usuario, sendo as tags h1, h2, h3, h4, h5, h6; são para titulos, sendo o h1 o maior e o menor o h6, e utilizando tais tags é mais facil de estruturar o texto para o usuario, e assim auxilia na hora de acessar os elementos da página;
+
+/* AULA 14 */
+Listas, ordenadas ou não ordenadas, você utiliza as tags <li> (list item) para cada item especifico, como no exemplo:
+	<h1> Suco Detox </h1>
+
+        <h2> Ingredientes </h2>
+
+        <li>3 Folhas de Couve</li>
+        <li>1 Laranja</li>
+        <li>300 ml de água</li>
+        <li>Adoçante a gosto</li>
+        <li>Gelo a gosto</li>
+
+(DICA SE VOCE COLOCAR A TAG E MULTIPLICALA O VSCODE MULTIPLICA PELA QUANTIDADE DE VEZES, exemplo (li*5) E APOS PRESSIONE ENTER)
+
+mas ao invés de só criar itens soltos na página você pode criar dentro de uma tag <ol> {order list}, na qual deixará a lista ordenada, e assim ele mostra os números da lista; caso você não deseje os números mas deseja indicar que é de uma lista, pode-se utilizar a tag <ul> que deixará apenas um pontinho na frente do elemento como no exemplo:
+
+	<h1> Suco Detox </h1>
+
+        <h2> Ingredientes: </h2>
+        <ul>
+            <li> 3 Folhas de Couve;</li>
+            <li> 1 Laranja;</li>
+            <li> 300 ml de água;</li>
+            <li> Adoçante a gosto;</li>
+            <li> Gelo a gosto.</li>
+        </ul>
+
+/* AULA 15 */
+CITAÇÕES - pode se usar a tag do blockquote como no exemplo abaixo: 
+
+	<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+            <p> 
+                O <strong> Elemento HTML <code> &lt;blockquote&gt; </code> </strong> (ou <em> HTML Block Quotation Element </em>) Indica que um texto externo foi citado.
+            </p>
+        </blockquote>
+
+o atributo cite indica de onde saiu a citação, já o code dentro do <p> deixa o texto em cor diferente no caso amarelo;
+
+tambem possuimos a tag cite para citação que de certa forma é mais simples de ser trablhada como no exemplo:
+
+<p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"><cite> página MDN blockquote </cite></a></p>
+
+a tag cite faz a citação, e isso serve para os moteores de busca do navegador, além de ajustar a disponibilidade
+
+/* AULA 16 */
+
+Abreviações - usamos a tag abbr com o atributo title apos mostramos a abreviação como no exemplo: 
+	<p>
+            Usamos <abbr title="Hipertext Markup Language">HTML</abbr> para estruturar nossos documentos da web
+        </p>
+
+/* AULA 17 */
+DETALHES DE CONTATO DE QUEM FEZ O HTML - utilizando a tag <address> como no exemplo abaixo;
+
+	<p> Pedro Marçal <br>
+        <strong> Franca, SP </strong></p>
+
+/* AULA 18 */
+Listas de Descrição- temos a tag <dl> que funciona como a tag <ol>, dl == description list; temos o <dt> {description term}, como no exemplo abaixo:
+
+<dl>
+            <dt>Hypertext</dt>
+            <dd>É um Hyper texto com possibildade ...</dd>
+
+            <dt>Markup</dt>
+            <dd>É uma linguagem de marcação</dd>
+
+            <dt>Language</dt>
+            <dd>Linguagem com semantica e sintaxe</dd>
+        </dl>
+O <dd> será a descrição do dt
+
+/* AULA 18 */
+como representar codigos no html; a tag <code> é para um codigo curto de uma linha assim não precisa ficar com medo dos caracteres reservados, contudo caso seja necessario um bloco de codigo maior utilizamos a tag <pre> assim dentro do pre conseguimos possuir varios <code>
+
+	<pre>
+            <code>
+                for i in range(x):
+                    print(x)
+            </code>
+        </pre> 
+
+porém se for um codigo com as tags do proprio html se usa as palavras reservadas, a tag <xmp> trocando mostra os caracteres especiais porem não é mais utilizada e pode dar erro então cuidado ao usar o xmp
+
+
+/* AULA 19 */
+<div> agrupar conteudos {blocos}
+<span> agrupar textos {linhas}
+
+usado para separar os conceitos é muito usado para o CSS ou JS;
+
+/* AULA 20 */
+URLS - <a href="">Conteudo</a>
+a tag <a>
+recebe atributos globais e o href (referencia), e esta pode ser uma url completa, fragmentos, email, telefone e outros;
+com o atributo dowload = "", que pode ser apenas o dowload da imagem, porem pode-se especificar quando colocado = "" após o atributo, 
+e o por fim o atributo target que é definido quando eu clicar neste link eu serei levado a que pagina, sendo target="_blank" (outra página), e target="_self" a mesma, o seld j´á é configuração default;
+
+/* AULA 21 */ 
+Hiperlinks e suas estrategias - 
+como apresentado anteriormente os hiperlinks servem como auxilio e ancoragem no seu site como o exemplo:
+	<ul>
+            <li><a href="https://rocketseat.com.br" target="_blank">Website</a></li>
+            <li><a href="mailto:pedro.h.silva.marcal@gmail.com" >Email</a></li>
+            <li><a href="tel:+5516244466666">Telefone</a></li>
+        </ul>
+porém pode se linkar a sessoês dentro do HTML ou outras páginas, para sessões iremos com o fragmento e o nome da sessão:
+<ul>
+            <li><a href="#codigos_no_HTML"> Code </a></li>
+            <li><a href="#Hiperlinks">Hiperlinks</a></li>
+            <li><a href="#listas_descricao">Descricao</a></li>
+        </ul>
+
+caso exista um id semelhante com o fragmentado dentro da pagina, o usuario sera redirecionado para tal localidade dentro do site
+
+/* AULA 22 */ 
+dentro da tag <a> se pode usar outras tags,
+ <a href="http://google.com" title="Ir google">
+            <img src="https://source.unsplash.com/random" alt="randomimage">
+        </a>
+
+/* AULA 23 */
+como navegar entre links interno dos projetos, URL = Uniform Resource Locator, e assim conseguimos encontrar arquivos, com a tag <a> colocamos o nome do arquivo sem https, porém tal esteja em outro diretorio utilizamos outras formas;
+
+/* AULA 24 */
+para navegar para outros diretorios, a partir da mesma pasta se faz 
+(nome da pasta)/(nome do arquivo);
+../(sair da pasta == ../ e dai vc acha seu caminho;
+diretorio raiz se usa ./(caminho);
+
+/* AULA 25 */
+URL absolutos sempre irão levar a um target especifico onde levam a uma URLS especifico, como o https://google.com (vai pro site), já o relativo ele vai ser com relação a pagina então google.com (este procurará nas pastas e diretorio) 
+
+/* AULA 26 */
+exercicio pratico crie um projeto com 2 arquivos no diretorio um com index.html e o outro com crontact.html
