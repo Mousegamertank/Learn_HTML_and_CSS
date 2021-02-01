@@ -306,4 +306,141 @@ diretorio raiz se usa ./(caminho);
 URL absolutos sempre irão levar a um target especifico onde levam a uma URLS especifico, como o https://google.com (vai pro site), já o relativo ele vai ser com relação a pagina então google.com (este procurará nas pastas e diretorio) 
 
 /* AULA 26 */
-exercicio pratico crie um projeto com 2 arquivos no diretorio um com index.html e o outro com crontact.html
+exercicio pratico crie um projeto com 2 arquivos no diretorio um com index.html e o outro com crontact.html;
+
+para abrir os emails no <a> se usa mailto:email@mail.ocm
+e no telefone é tel: 
+
+/* AULA 27 */
+
+elemento table - organização de dados, é excelente aos dados linhas e colunas, e acessibilidade para leitura porém é pouco flexivel e precisara de CSS
+
+/* AULA 28 */
+para se criar uma tabela é bem simples, se  usara a tag <table> e dentro dela inserir uma tag chamada <tr> {table room}, tal criara uma linha, e logo após colocamos a tag <th> que seria como o cabeçalho dos dados dentro da <tr>:
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+            <td> Linha 1 </td>
+            <td> 35 </td>
+        <tr>
+            <td> Linha 2 </td>
+            <td> 25 </td>
+        </tr>
+    </table>
+
+/* AULA 29 */
+para possuirmos uma organização maior é preferivel colocar dentro do <thead> e do <tbody>, tags usadas para manter uma organização sobre o que são os titulos da tabela e o que são os elementos do corpo, <thead> para titulo, enquanto <tbody> para corpo, além do <tfoot> que pode ser usado para colocar resultados de uma tabela, ou até mesmo a caption usada para descrever do que é a tabela:
+    <table>
+        <caption> Linhas por numeros </caption>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td> Linha 1 </td>
+            <td> 35 </td>
+        </tr>
+        <tr>
+            <td> Linha 2 </td>
+            <td> 25 </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <td> Total: </td>
+            <td> 2 Linhas </td>
+        </tfoot>
+    </table>
+
+/* AULA 30 */
+a tag <th>  possui um atributo chamado rowspan="Valor desejado", esse atributo assim com o colspan="Valor Desejado", fazem o controle de quantas linhas ou colunas eles vão assumir o rowspan vem para controlar quantas linhas determinado elemento vai pegar na tabela, enquanto o colspan vem como controle de colunas que um elemento vai possuir; exemplo: 
+
+<tr>
+    <th rowspan="2"></th>
+    <th colspan="2">Afonso Pena</th>
+    <th colspan="2">Antonio Pereira </th>
+</tr>
+
+/* AULA 31 */
+
+Utilizamos uma tag chamada <colgroup> ela serve para separa e estilizar as principais colunas, desta forma fica mais facil de utilizar dentro do colgroup tera a tag <col> e o estilo vai nela interno como no exemplo:
+
+<colgroup>
+    <col>
+    <col style="background-color: red;" span="2">
+    <col style="background-color: blueviolet;" span="2">
+</colgroup>
+
+o atributo span server para definir qual o tamanho dentro da coluna no caso de 2
+
+/* AULA 32 */ 
+para os leitores não é mt simples ler uma tabela, pois ele pode se perder ou n indicar corretamente onde esta o que, porém se existe uma coisa chamada escopo, na qual podemos definir onde sera lido qual o tamanho e qual locar a ser seguido, para o definir o escopo a tag <th> tem o atributo escope e nele vc define col e row, como no exemplo:
+<thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2" scope="colgroup">Afonso Pena</th>
+                    <th colspan="2" scope="colgroup">Antonio Pereira </th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Vassouras</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+/* AULA 33 */
+no head nos possuimos o meta que trabalha com os metadados da nossa página, como padrão vem o meta charset que define o padrão de linguagem, e o meta name="viewport", que define para nos a portabilidade a dispositivos moveis, geralmente nas metas tem se o name e o content, nome e conteudo
+
+/* AULA 34 */
+Metas Importantes para os motores de busca; meta charset, e meta viewport;
+
+<meta name="author" content="Pedro Marçal">, define como metadado o autor da página
+
+<meta name="description" content=""> dentro do contente você colocara qual o intuito da pagina, e ficara esposto no google o texto informativo desejado
+
+<meta name="robots" content="nofollow"> 
+{nofollow: não segue os links da página;
+follow: segue os links da pagina;
+noindex: pagina não anexada;
+}; 
+é para informar o robozinho do google como agir dentro da página
+
+/* AULA 35 */
+As redes socias tambem podem criar metadados para auxiliar na divulgação
+<!--face-->
+<meta property="og:image" content="https://cdn-images-1.medium.com.max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+<meta property="og:description" content="Texto Informativo">
+<meta property="og:title" content="Site">
+{og.image: pega uma imagen para compartilhamento do face;
+og.description: texto a ser mostrado ao compartilhar no face
+og.title: Titulo a ser apresentado
+}
+
+<!--twitter-->

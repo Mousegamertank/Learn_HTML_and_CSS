@@ -55,6 +55,26 @@
 	<code> Bloco pequeno de conteudo de codigo </code>
 
 	<span> Agrupar Linhas </span>
+
+	<table> Criar tabelas </table>
+
+	<tr> Linha dentro da Table </tr>
+
+	<th rowspan="núm inteiro para controle de linhas" colspan="núm inteiro para controle de colunas", scope="col, row"> Cabeçalho dentro da linha </th>
+
+	<td> Descrição </td>
+
+	<thead> Usado para indicar os titulos da tabela </thead>
+
+	<tbody> Usado para indicar o corpo da tabela </tbody>
+
+	<tfoot> Usado como area para marcar resultados </tfoot>
+
+	<captions> Descrever o que é a tabela </captions>
+
+	<colgroup> possui a tag col dentro e nela voce consegue fazer as stilizações necessarias para sua coluna </colgroup>
+
+	<col style="CSS"> esta tag vai pegar coluna por coluna da sua tabela </col>
 </div>
 ----------------------------------------------------
 <!--ATRIBUTOS GLOBAIS-->
@@ -65,7 +85,7 @@
 	hidden,
 	id,
 	style,
-	tabindex	,
+	tabindex,
 	title,
 </div>
 -----------------------------------------------------
