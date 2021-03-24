@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+#aulas1, h1 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+}
+
+#container {
+    width: 200px;
+}
+
+.m-40 {
+    margin: 40px; 
+}

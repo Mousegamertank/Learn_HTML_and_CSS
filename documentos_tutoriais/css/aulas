@@ -1,0 +1,32 @@
+/* AULA 1 */
+para se criar elementos HTML, deve se ter o elemento HTML, como exemplo a tag <h1>, no css ela se declara ela como no exemplo:
+h1 {
+    color: blue;
+    font-size: 60px;
+    background: gray;
+}
+
+a tag h1 tera o tamanho de fonte de 60 pixels, a cor azul, e o fundo cinza, na sintaxe do css após declara uma tag se abre {} e todas as alterações e personalizações vem dentro de tal, sendo como exemplo: 
+color (propriedade) : blue (valor);
+sempre após a propriedade se abre com : e fecha com ;
+
+selector == H1
+Declaration == {}
+properties == color:
+properties Values == gray;
+
+/* AULA 2 */ 
+Selectors works connecting the elements with css
+
+Elements or Type Selector: work with tags HTML like 'h1, h2, p, div'
+
+IDSelector: if the HTML has an atribute called ID you can use this ID to make the changes using the #(ID name),  
+
+Attribute Selector, Pseudo-Class, Pseudo-Element and others we will see later;
+
+if we open an Selector with * {} all the changes inside of this * will be add to all the elements
+
+caso dois elemetos diferentes for receber a mesma formatação ao inves de copiar e colar, é mais simples agrupar os elemeentos com ',' 
+
+/* AULA 3 */ 
+

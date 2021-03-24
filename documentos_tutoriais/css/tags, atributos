@@ -1,0 +1,20 @@
+Color: rgba (0, 0, 0, 0); {Insert the values to you colors in RGB, and the RGBA have alpha them you can make more transparency}
+       rgb (0, 0, 0); {Colors in RGB};
+       name; {insert the name from color}
+       hex; {used the system colors hex}
+       cmk; {use the system of colors CMK}
+
+font-size: changes the size from your font, but you can use pixels or other elements;
+
+* {
+    to all the elements we will give the config 
+}
+
+width: changes the width by using pixels, viewport, %;
+width: 200px;,
+
+margin: control the distance beetwen the box outisde, and it's very flexible;
+margin: 0; defines to top, left, bottom, right (that order) a value == 0
+margin: 2px 3px; defines to top and bottom 2px and to left and right 3px
+margin: 1px 2px 3px 4px; defines to top 1px, to left 2px, to bottom 3px, and to rigth 4px
+
